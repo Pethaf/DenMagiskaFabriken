@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace DenMagiskaFabriken
 {
-    class Metal : Part
+    class Bicycleblueprint: Blueprint
     {
-        public Metal(string desc) : base()
+        public Bicycleblueprint(): base(new List<Part> { new Wheel(), new Wheel(), new Metal("Iron") }, "A Bicycle")
         {
-            base.Desc = desc;
-            base.ComplexityScore = 1;
+            
         }
-     
     }
 }

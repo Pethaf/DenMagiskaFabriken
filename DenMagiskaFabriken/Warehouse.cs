@@ -8,7 +8,7 @@ namespace DenMagiskaFabriken
 {
     class Warehouse
     {
-        List<Part> _inventory; 
+        public List<Part> _inventory; 
         public Warehouse()
         {
             _inventory = new List<Part> { }; 

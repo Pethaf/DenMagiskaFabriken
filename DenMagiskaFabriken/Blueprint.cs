@@ -8,20 +8,23 @@ namespace DenMagiskaFabriken
 {
     class Blueprint
     {
+        private List<Part> _partsNeeded; 
         public List<Part> partsNeeded
         {
-            get => partsNeeded;
+            get => _partsNeeded;
         }
         public string _description;
         public Blueprint(List<Part> theParts, string Description)
         {
+            _partsNeeded = new List<Part>();
+            _description = Description;
             foreach(Part thePart in theParts)
             {
-                partsNeeded.Add(thePart); 
+                _partsNeeded.Add(thePart); 
             }
         }public int getNumberPartsNeeded()
         {
-            return partsNeeded.Count;
+            return _partsNeeded.Count;
         }
     }
 }

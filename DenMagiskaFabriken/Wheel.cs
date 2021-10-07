@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace DenMagiskaFabriken
 {
-    class Metal : Part
+    class Wheel: Part
     {
-        public Metal(string desc) : base()
+        public Wheel()
         {
-            base.Desc = desc;
-            base.ComplexityScore = 1;
+            Desc = "Wheel";
+            ComplexityScore = 2; 
         }
-     
     }
 }
